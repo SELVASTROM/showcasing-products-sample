@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: cyan;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #777;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    background-color: gold;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products article {
+    background-color: white;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 300px;
+    font-size: 1.2em;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: cyan;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 2px solid #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .products article {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 30px 10px;
+    }
+}
